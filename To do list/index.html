@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <button class="switch">Turn off background</button>
+
+    <div class="main">
+        <header>
+            <h1 class="title">My <span>Todo list</span></h1>
+        </header>
+        <div class="forms">
+            <input type="text" id="text" placeholder="Type a todo here" maxlength="30">
+            <button type="submit" class = "add">Add todo</button>
+        </div>
+        <small>Enter a todo before clicking a button</small>
+            <div class="dateContainer">
+                <select name="todo" class = "filter">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="uncompleted">Uncompleted</option>
+                </select>
+            </div>
+
+        <div class="list">
+            <ul></ul>
+        </div>
+
+    </div>
+
+    <script src="animation.js" defer></script>
+    <script src="app.js"></script>
+</body>
+</html>
